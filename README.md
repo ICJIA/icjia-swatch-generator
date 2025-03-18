@@ -2,7 +2,9 @@
 
 A web application for generating color palettes based on color theory principles.
 
-![Color Swatch Generator Screenshot](https://via.placeholder.com/800x450.png?text=Color+Swatch+Generator)
+## Demo
+
+https://icjia-swatch.netlify.app/
 
 ## Features
 
@@ -16,6 +18,7 @@ A web application for generating color palettes based on color theory principles
   - Tetradic (Rectangle)
   - Shades & Tints
   - Golden Ratio Harmony
+- Browse a library of pre-curated color swatches from popular design websites
 - Copy color hex codes with a single click
 - Responsive design for all device sizes
 - Modern UI with subtle animations
@@ -27,6 +30,8 @@ A web application for generating color palettes based on color theory principles
 2. Click "Generate Swatches" to create color palettes
 3. Click on any color swatch to copy its hex code to clipboard
 4. Use the generated color schemes in your design projects
+5. Browse the "Color Library" to discover pre-curated swatches from popular design resources
+6. Click on any color in the library to copy its hex code for immediate use
 
 ## Color Theory Principles & Patterns
 
@@ -126,10 +131,6 @@ python -m http.server
 # Using Node.js (with http-server package)
 npx http-server
 ```
-
-## Demo
-
-https://<the_site+here>
 
 ## License
 
