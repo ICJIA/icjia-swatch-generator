@@ -403,6 +403,11 @@
         const patternsContainer = document.getElementById("patternsContainer");
         const copiedNotification =
           document.getElementById("copiedNotification");
+          
+        // Update theme primary color when base color changes
+        const updateThemeColors = (color) => {
+          document.documentElement.style.setProperty("--primary-color", color);
+        };
 
         // Check if there's a selected color from the library
         const savedColor = localStorage.getItem("selectedColor");
@@ -420,11 +425,6 @@
           // Show notification that color was loaded from library
           showCopiedNotification(`${savedColor} loaded from library`);
         }
-
-        // Update theme primary color when base color changes
-        const updateThemeColors = (color) => {
-          document.documentElement.style.setProperty("--primary-color", color);
-        };
 
         // Sync color picker and hex input
         colorPicker.addEventListener("input", () => {
